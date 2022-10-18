@@ -142,6 +142,10 @@ display(example_df)
 
 # COMMAND ----------
 
+print(f"{DA.paths.datasets}/nyctaxi-with-zipcodes/data")
+
+# COMMAND ----------
+
 files = dbutils.fs.ls(f"{DA.paths.datasets}/nyctaxi-with-zipcodes/data")
 display(files)
 

@@ -51,6 +51,11 @@
 
 -- COMMAND ----------
 
+-- MAGIC %python
+-- MAGIC print(f"{DA.schema_name}")
+
+-- COMMAND ----------
+
 CREATE SCHEMA IF NOT EXISTS ${da.schema_name}_default_location;
 CREATE SCHEMA IF NOT EXISTS ${da.schema_name}_custom_location LOCATION '${da.paths.working_dir}/${da.schema_name}_custom_location.db';
 
